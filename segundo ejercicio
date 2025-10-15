@@ -1,0 +1,37 @@
+#include <iostream> 
+using namespace std;
+int main () { 
+  int precio=0;
+  int numerodedias=0;
+  int distancia=0;
+  int descuento=0;
+  char key;
+  
+  do{
+  
+  cout<< " ingrese el numero de su estadia :"<<endl;
+  cin>> numerodedias;
+  
+ cout<< " ingrese la distancia: " <<endl;
+ cin >> distancia;
+ 
+ precio= 2 * distancia;
+ 
+ if ( numerodedias> 7&& distancia > 800 ){
+ 	descuento= 0.3*  precio;
+ 	
+ 	precio- descuento; 
+ 	cout << "su precio con descuento es de:"<< precio<< endl;
+	  
+ }
+ else { 
+ cout << " su precio seria de:"<< precio << precio << endl ;
+
+ }
+ cout<< "si deseas continuar ingresa la letra d ,sino ingresa cualquier otra " <<endl;
+ cin>>key;
+}while (key== 'd'|| key== 'D');
+ 
+ return 0;
+}
+//falta << en la linea 15
